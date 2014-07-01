@@ -35,7 +35,7 @@
 
               <!-- Rotator Title --> 
                 <div id="rotate">
-                   <h1 class="rotate">We are a <span>Big Digital Agency</span></h1>
+                 <h1 class="rotate"><span>Web European Conference</span></h1>
                    <h1 class="rotate">Our website is <span>under construction</span></h1>
                 </div>
                 <!-- End Rotator Title -->
@@ -60,8 +60,8 @@
           <div class="row">
             <div class="large-12 columns text-center">
               <div class="text-center">
-              <h2 class="heading">Time left <span>until launching</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius.</p><br /><br />
+              <h2 class="heading">Get ready! <span>Spring 2015</span></h2>
+              <p>This is the first European Conference dedicated only to the future of web development. Everything about the coolest framework aspnet vnext, nodejs, ruby, angularjs and so on</p><br /><br />
             </div>
 
             <div class="small-10 columns small-centered">
