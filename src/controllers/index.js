@@ -5,7 +5,6 @@
 
     controllers.init = function(app) {
         ctrls.forEach(function(ctrl) {
-        	logger.info('Registering controller: ' + ctrl);
             ctrl.init(app);
         });
     };
