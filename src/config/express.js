@@ -44,15 +44,17 @@
             "stream": logger.stream
         }));
 
+        var credentials = require("./credentials.js").credentials;
+
         mailer.extend(app, {
             from: 'no-reply@example.com',
-            host: 'smtp.gmail.com', // hostname
-            secureConnection: true, // use SSL
-            port: 465, // port for secure SMTP
+            host: credentials.mailer.host,
+            secureConnection: credentials.mailer.secureConnection,
+            port: credentials.mailer.port,
             transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
             auth: {
-                user: 'gmail.user@gmail.com',
-                pass: 'userpass'
+                user: credentials.mailer.username,
+                pass: credentials.mailer.password
             }
         });
 
