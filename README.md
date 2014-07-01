@@ -6,7 +6,7 @@ First think to do is install the right packages:
 
 ```
 # Install grunt and bower
-$ npm install -g grunt-cli bower
+$ npm install -g grunt-cli
 
 # Install packages
 $ npm install

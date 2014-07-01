@@ -3,6 +3,7 @@
     var logger = require("../utils/logger");
 
     var path = require('path');
+	var expressValidator = require('express-validator');
 
     expressConfig.init = function(app, express) {
 
@@ -31,6 +32,9 @@
 	    app.use(bodyParser.urlencoded({
 		  extended: true
 		}));
+
+		logger.debug("Enable validation....");
+		app.use(expressValidator());
 
 	    logger.debug("Overriding 'Express' logger");
     	app.use(require('morgan')({ "stream": logger.stream }));
