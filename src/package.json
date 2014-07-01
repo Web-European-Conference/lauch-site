@@ -1,0 +1,28 @@
+{
+  "name": "Web-European-Conference-Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Web-European-Conference/website.git"
+  },
+  "author": "@imperugo and @simonech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-European-Conference/website/issues"
+  },
+  "homepage": "https://github.com/Web-European-Conference/website",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "compression": "^1.0.8",
+    "express": "^4.4.5",
+    "mailchimp": "^1.1.0",
+    "morgan": "^1.1.1",
+    "vash": "^0.7.12-1",
+    "winston": "^0.7.3"
+  }
+}

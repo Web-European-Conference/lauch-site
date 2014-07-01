@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Booster - Template Documentation</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="css/style.css"> 
+  
+  <!-- Syntax Highlighter -->
+  <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+  <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+ 
+  
+  <!-- Start JavaScript -->
+  
+    <script src="js/jquery-1.7.2.min.js"></script> <!-- jQuery library -->
+    <script src="js/jquery.easing.1.3.min.js"></script> <!-- jQuery Easing --> 
+    <script src="js/colortip.js"></script> <!-- Colortip Tooltip Plugin  -->
+    <script src="js/jquery.scrollTo.js"></script> <!-- ScrollTo plugin  -->
+    <script src="js/jquery.nav.js"></script> <!-- Navigation plugin  -->
+    <script src="js/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
+    <script src="js/custom.js"></script> <!-- Custom Js file for javascript in html -->
+    <script src="js/selectnav.js"></script> <!-- Responsive Navigation Menu by SelectNav -->
+  
+  <!-- End JavaScript -->
+
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+  <![endif]-->
+  
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+
+  <div class="container" id="Welcome">
+    
+    
+    <div class="three columns">
+      <div class="navigation">
+        <ul id="nav">
+          <li class="current"><a href="#Welcome">Welcome</a></li>
+          <li><a href="#Installing">Installing Theme</a></li>
+          <li><a href="#HTML">HTML Structure</a></li>
+          <li><a href="#CSS">CSS Structure</a></li>
+          <li><a href="#Javascript">Javascript Settings</a></li>
+          <li><a href="#countdown">Countdown Settings</a></li>
+          <li><a href="#video-background">Video Background</a></li>
+          <li><a href="#image-background">Image Background</a></li>
+          <li><a href="#Contact">Contact Form</a></li>
+          <li><a href="#subscription">Subscription Form</a></li>
+          <li><a href="#Scripts">Scripts & Credits</a></li>
+        </ul>
+      
+      </div>
+    </div><!-- End Navigation -->
+    
+    <div class="thirteen columns">
+      <div class="thirteen columns">
+      <div class="logo"><img src="images/theme-logo.png" alt="" /></div>
+    </div> <!-- End logo -->
+
+
+    <!-- start content -->
+      <div class="content">
+
+        <!-- start section 1 -->
+        <div class="section">        
+          <h1>Welcome To Booster Theme Documentation</h1>
+          <!-- start data -->
+            <div class="data">          
+              <p>Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel 
+              free to send an email to <a href="mailto:support@mordorthemes.com">support@mordorthemes.com</a>.. Thanks so much!          
+              </p> <br />
+              <h2>Theme Preview</h2><br />
+              <img src="images/img/preview.png" alt="" class="pic" />          
+              <strong>Theme features : </strong><br />
+              <ul class="list2">
+              <li>- HTML5 & CSS3</li>
+              <li>- Responsive Design</li>
+              <li>- Ajax/Php Form with validation</li>
+              <li>- Ajax/Php Contact Form with validation</li>
+              <li>- Font Awesome</li>
+              <li>- Fullscreen Background</li>
+              <li>- Slideshow background</li>
+              <li>- Fullscreen Video Background</li>
+              <li>- Countdown</li>
+              <li>- Social Contacts</li>
+              </ul>        
+          </div><!-- End data -->          
+        </div><!-- End section-1 -->
+
+        <!-- start section installing -->
+        <div class="section" id="Installing">       
+          <h1>Installing Theme</h1>
+          <!-- start data -->       
+          <div class="data">          
+            <ul class="list">
+              <li><span class="color">&#8594;</span> After unzip Theme Files, you will found <span class="color">HTML Folder</span> have 3 Theme styles <span class="color"> single-image </span>, <span class="color"> slideshow-image </span>, <span class="color"> video-background</span>, choose folder to upload to your site.
+              </li>
+              <li><span class="color">&#8594;</span> You can view this Theme in any web browser from your desktop computer. Because the files are written in HTML, you do not 
+              need an internet connection in order to display or edit the Theme.
+              </li>
+              <li><span class="color">&#8594;</span> The exception is the <span class="color">contact form</span> which functions based on the PHP coding language and requires a server to send messages.
+              </li>
+              <li><span class="color">&#8594;</span> Start your FTP client (I personally use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.
+              </li>
+              <li><span class="color">&#8594;</span> Start your FTP client (I persoanlly use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.
+              </li>
+              <li><span class="color">&#8594;</span> Locate the domain folder you wish to upload your Theme files to on your server. You are going to want to click and drag every file that you have labeled .html, .css, .php, .js into your FTP client.
+              </li>
+              <li><span class="color">&#8594;</span> Once the files are done uploading, rename the file you want to be your home page as 'index.html'.
+              </li>
+           </ul>         
+          </div><!-- End data -->          
+        </div><!-- End section installing -->
+        
+        <!-- start section html -->
+        <div class="section" id="HTML">        
+          <h1>HTML Structure</h1>
+          <!-- start data -->
+          <div class="data">           
+            <p>This Theme has a Responsive layout with a variation of column layouts depending on device. This theme uses Foundation5 grid system(12 columns) which will help streamline any customization you wish to make. If you're unfamiliar with Foundation5 grid system, be sure to go to
+            <a title="" href="http://foundation.zurb.com/docs/components/grid.html" target="_blank">Foundation grid documentation</a>, and you will see the Grid system with divs.            
+            </p>
+          
+           <pre class="brush: html;" class="syntaxhighlighter  html">
+          	<div class="row"> 
+                <div class="small-2 large-4 columns">...</div>      
+                <div class="small-4 large-4 columns">...</div>
+                <div class="small-6 large-4 columns">...</div>
+              </div>
+              <div class="row"> 
+                <div class="large-3 columns">...</div>
+                <div class="large-6 columns">...</div> 
+                <div class="large-3 columns">...</div> 
+              </div> 
+              <div class="row"> 
+                <div class="small-6 large-2 columns">...</div> 
+                <div class="small-6 large-8 columns">...</div> 
+                <div class="small-12 large-2 columns">...</div> 
+              </div> 
+              <div class="row"> 
+                <div class="small-3 columns">...</div> 
+                <div class="small-9 columns">...</div> 
+              </div> 
+              <div class="row"> 
+                <div class="large-4 columns">...</div> 
+                <div class="large-8 columns">...</div> 
+              </div> 
+              <div class="row"> 
+                <div class="small-6 large-5 columns">...</div> 
+                <div class="small-6 large-7 columns">...</div> 
+              </div> 
+              <div class="row"> 
+                <div class="large-6 columns">...</div> 
+                <div class="large-6 columns">...</div> 
+              </div>
+		      </pre>
+          <br />
+          </div><!-- End data -->
+        </div><!-- End section html -->
+        
+        <!-- start section css -->
+        <div class="section" id="CSS">
+          <h1>CSS Structure</h1>
+          <!-- start data -->
+          <div class="data">
+            <p>I'm using one main CSS file (style.css) in this theme which you are free to modify depending on the customization you require. There are also six additional style sheets that I do not recommend changing. Those style sheets reside in the 'CSS' folder. The six additional style sheets are:
+            </p>
+
+           <pre class="brush: html;" class="syntaxhighlighter  html">
+
+            /*
+            * Theme Name: Booster
+            * File name: style.css
+            * Theme URL: booster.mordorthemes.com
+            * Description: Tangram - One page html/css website template
+            * Author: Mordorthemes
+            * Author URL: http://www.mordorthemes.com
+            * Support: support@mordorthemes.com
+            * Version: 1.0
+            */
+
+            @import url("normalize.css");
+            @import url("foundation.css"); 
+            @import url("font-awesome.css");
+            @import url("animate.min.css");
+            @import url("owl.transitions.css");
+            @import url("layout.css");
+
+          </pre>
+
+          </div><!-- End data -->        
+        </div><!-- End section css -->
+        
+        <!-- start section javascript -->
+        <div class="section" id="Javascript">        
+          <h1>Javascript Settings</h1>
+          <!-- start data -->
+          <div class="data">
+            <p>Here you can modify any settings for ( Sliders, parallax, googlemap and more..)<br />
+            Please note that ajax version does not work locally in all browsers
+            </p>
+           
+           
+           <pre class="brush: javascript">
+           
+    /*
+    * Theme Name: Booster
+    * File name: custom.js
+    * Theme URL: booster.mordorthemes.com
+    * Description: Booster - Coming Soon Template
+    * Author: Mordorthemes
+    * Author URL: http://www.mordorthemes.com
+    * Support: support@mordorthemes.com
+    * Version: 1.0
+    */
+
+
+
+
+
+    /* ==============================================
+        Page Preloader
+    =============================================== */
+    $(window).load(function() { 
+        $("#loader").delay(500).fadeOut(); 
+        $(".mask").delay(1000).fadeOut("slow");
+    });
+
+
+
+
+    /* ==============================================
+        Sticky Footer
+    =============================================== */
+    $(document).ready(function(){
+
+        'use strict';
+
+            $(window).resize(function(){
+                    var footerHeight = $('.footer').outerHeight();
+                    var stickFooterPush = $('.push').height(footerHeight);
+            
+                    $('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+                });
+            
+                $(window).resize();
+            });
+
+
+
+
+
+    $(document).ready( function(){
+
+        'use strict';
+
+    /* ==============================================
+       Countdown
+    =============================================== */
+      // Create a countdown instance. Change the launchDay according to your needs.
+      // The month ranges from 0 to 11. I specify the month from 1 to 12 and manually subtract the 1.
+      // Thus the launchDay below denotes 7 May, 2014.
+      var launchDay = new Date(2015, 5-1, 7);
+      $('#timer').countdown({
+      until: launchDay
+      });
+
+
+
+
+
+    /* ==============================================
+      Carousel
+    =============================================== */
+      var sync1 = $("#sync1");
+        var sync2 = $("#sync2");
+         
+        sync1.owlCarousel({
+        singleItem : true,
+        slideSpeed : 1000,
+        navigation: false,
+        pagination:false,
+        autoHeight:true,
+        transitionStyle : "goDown",
+        afterAction : syncPosition,
+        responsiveRefreshRate : 200,
+        });
+         
+        sync2.owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3],
+        itemsTablet : [768,3],
+        itemsMobile : [479,3],
+        pagination:false,
+        responsiveRefreshRate : 100,
+        afterInit : function(el){
+        el.find(".owl-item").eq(0).addClass("synced");
+        }
+        });
+         
+        function syncPosition(el){
+        var current = this.currentItem;
+        $("#sync2")
+        .find(".owl-item")
+        .removeClass("synced")
+        .eq(current)
+        .addClass("synced")
+        if($("#sync2").data("owlCarousel") !== undefined){
+        center(current)
+        }
+        }
+         
+        $("#sync2").on("click", ".owl-item", function(e){
+        e.preventDefault();
+        var number = $(this).data("owlItem");
+        sync1.trigger("owl.goTo",number);
+        });
+         
+        function center(number){
+        var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+        var num = number;
+        var found = false;
+        for(var i in sync2visible){
+        if(num === sync2visible[i]){
+        var found = true;
+        }
+        }
+         
+        if(found===false){
+        if(num>sync2visible[sync2visible.length-1]){
+        sync2.trigger("owl.goTo", num - sync2visible.length+2)
+        }else{
+        if(num - 1 === -1){
+        num = 0;
+        }
+        sync2.trigger("owl.goTo", num);
+        }
+        } else if(num === sync2visible[sync2visible.length-1]){
+        sync2.trigger("owl.goTo", sync2visible[1])
+        } else if(num === sync2visible[0]){
+        sync2.trigger("owl.goTo", num-1)
+        }
+        }
+
+
+
+
+    /* ==============================================
+      Contact Form
+    =============================================== */
+    $('#contactform').submit(function(){
+
+        'use strict';
+
+            var action = $(this).attr('action');
+
+            $("#message").slideUp(300,function() {
+            $('#message').hide();
+
+            $('#submit')
+                .after('<img src="img/ajax-loader.gif" class="loader" />')
+                .attr('disabled','disabled');
+
+            $.post(action, {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                comments: $('#comments').val()
+            },
+                function(data){
+                    document.getElementById('message').innerHTML = data;
+                    $('#message').slideDown(300);
+                    $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+                    $('#submit').removeAttr('disabled');
+                    if(data.match('success') != null) $('#contactform').slideUp('slow');
+
+                }
+            );
+
+            });
+
+            return false;
+
+        });
+
+
+    });
+    /* end ready function */
+
+
+
+
+
+    /* ==============================================
+        Text Rotator
+    =============================================== */
+    jQuery(document).ready(function(){
+
+            $("body");
+                options = {
+                speed: 4e3,
+                transition_speed: 500,
+                sub_selector: ".rotate"
+             };
+             $("#rotate").rotator(options);
+    });
+
+
+
+
+
+
+    /* ==============================================
+        Newsletter Subscription Form
+    =============================================== */
+    jQuery(document).ready(function(){
+
+    'use strict';
+
+        $('#subscribe').submit(function(){
+
+            var action = $(this).attr('action');
+
+            $("#message-subscribe").slideUp(300,function() {
+            $('#message-subscribe').hide();
+
+            $('#ssubmit')
+                .after('<img src="img/ajax-loader.gif" class="subscribe-loader" />')
+                .attr('disabled','disabled');
+
+            $.post(action, {
+                email: $('#semail').val()
+            },
+                function(data){
+                    document.getElementById('message-subscribe').innerHTML = data;
+                    $('#message-subscribe').slideDown(300);
+                    $('#subscribe img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
+                    $('#ssubmit').removeAttr('disabled');
+                    if(data.match('success') != null) $('#subscribe').slideUp('slow');
+
+                }
+            );
+
+            });
+
+            return false;
+
+        });
+
+    });
+
+
+
+
+
+
+    /* ==============================================
+      Text Rotator Function
+    =============================================== */
+    (function (e) {
+
+
+        e.fn.rotator = function (n) {
+            function f() {
+                u.stop().fadeOut(r.transition_speed, function () {
+                    if (i == o) {
+                        u = s.first();
+                        i = 0
+                    } else u = u.next();
+                    u.fadeIn(r.transition_speed);
+                    i++;
+                    setTimeout(f, r.speed)
+                })
+            }
+            var r = e.extend({}, t, n);
+            var i = 1;
+            var s = this.children(r.sub_selector);
+            var o = s.length;
+            s.hide();
+            var u = s.first();
+            var a = this;
+            u.fadeIn();
+            setTimeout(f, r.speed);
+            return this
+        };
+        var t = e.fn.defaults = {
+            speed: 3e3,
+            transition_speed: 500,
+            sub_selector: ".rotate"
+        }
+    })(jQuery)
+
+           </pre>
+          </div><!-- End data -->          
+        </div><!-- End section javascript -->
+
+        <!-- start section countdown -->
+        <div class="section" id="countdown">
+          <h1>Countdown Settings</h1>
+          <!-- start data -->
+          <div class="data">   
+
+            <h3>For setting countdown</h3>      
+            <p>Open <strong>js/custom.js</strong> and looking for this code:</p>
+          
+            <pre class="brush: javascript">
+              $(document).ready( function(){
+
+                'use strict';
+
+                /* ==============================================
+                   Countdown
+                =============================================== */
+                    // Create a countdown instance. Change the launchDay according to your needs.
+                    // The month ranges from 0 to 11. I specify the month from 1 to 12 and manually subtract the 1.
+                    // Thus the launchDay below denotes 7 May, 2014.
+                    var launchDay = new Date(2015, 5-1, 7);
+                    $('#timer').countdown({
+                    until: launchDay
+              });
+            </pre><br />
+            <p>And change the date as you want </p>
+            <br /><br />
+
+        </div><!-- end data -->
+        </div><!-- end countdown -->
+      
+        <!-- start section video-background -->
+        <div class="section" id="video-background">
+          <h1>Video Background</h1>
+          <!-- start data -->
+          <div class="data">         
+            <p>Open <strong>index.html</strong> and looking for this code:</p>
+          
+          <pre class="brush: html">
+            <!-- video from youtube, change here your url -->  
+            <div id="bgndVideo" class="player" data-poster="img/img1.jpg" data-property="{videoURL:'http://youtu.be/mcixldqDIEQ',containment:'body', autoPlay:true, showControls:false, mute:true, startAt:12, opacity:1}"></div>
+             <div id="bg-video-controls">
+                <a id="bg-video-volume" class="fa fa-volume-off" href="#" title="Unmute">&nbsp;</a>
+                <a id="bg-video-play" class="fa fa-pause" href="#" title="Pause">&nbsp;</a>
+              </div>
+            <!-- end video from youtube -->
+          </pre>
+
+          <p>Here you can change your video<br />
+            Booster uses YTPlayer.js for play video, for customization and info about plugin you can look here:
+            <a title="" href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">YTPlayer.js</a>
+          </p>
+        </div><!-- end data -->
+        </div><!-- end video background -->
+
+        <!-- start section image-background -->
+        <div class="section" id="image-background">
+          <h1>Image Background</h1>
+          <!-- start data -->
+          <div class="data">   
+
+            <h3>For single image</h3>      
+            <p>Open <strong>index.html</strong> and looking for this code at the end of page:</p>
+          
+            <pre class="brush: javascript">
+              <script>
+                jQuery(document).ready(function ($) {
+                'use strict';
+                $.backstretch("img/img1.jpg");
+              });
+              </script>
+            </pre><br />
+            <p>And change the image with your </p>
+            <br /><br />
+
+            <h3>For slideshow image</h3>      
+            <p>Open <strong>index.html</strong> and looking for this code at the end of page:</p>
+          
+            <pre class="brush: javascript">
+              <script>
+                jQuery(document).ready(function ($) {
+                  'use strict';
+                  $.backstretch([
+                  "img/img1.jpg",
+                  "img/img2.jpg",
+                  "img/img3.jpg"
+                ], {
+                    fade: 750,
+                    duration: 4000
+                });
+              });
+            </script>
+            </pre><br />
+            <p>And change images with yours </p>
+            <br /><br />
+        </div><!-- end data -->
+        </div><!-- end image background -->
+
+        <div class="section" id="Contact">
+          <h1>Contact Form</h1>
+          <!-- start data -->
+          <div class="data">           
+           <p><strong>Contact Form </strong> :  is PHP Script for sending messages to your email to be connected with your visitors or clients , you should edite email default to your email to start receive messages , now do this below :
+           </p><br />
+           <h3>Go To File ( php/contact.php ) in main folder and change email :</h3><br />
+            
+            <pre class="brush: php;" class="syntaxhighlighter  html">
+              //$address = "example@example.net";
+              $address = "example@example.net";
+            </pre>
+
+          </div><!-- End data -->          
+        </div><!-- End section contact -->
+        
+        
+        <div class="section" id="subscription">
+          <h1>Subscription Form</h1>
+          <!-- start data -->
+          <div class="data">           
+           <p><strong>Contact Form </strong> :  is PHP Script for sending messages to your email to be connected with your visitors or clients , you should edite email default to your email to start receive messages , now do this below :
+           </p><br />
+           <h3>Go To File ( php/subscribe.php ) in main folder and change email :</h3><br />
+            
+            <pre class="brush: php;" class="syntaxhighlighter  html">
+              //$address = "example@example.net";
+              $address = "example@example.net";
+            </pre>
+
+          </div><!-- End data -->          
+        </div><!-- End section contact -->
+        
+        
+        <!-- start section scripts -->
+        <div class="section" id="Scripts">        
+          <h1>Scripts</h1>
+          <!-- start data -->
+          <div class="data">
+            <p>Please follow this links and read documentations if you want modify plugin i have use in Booster</p>           
+            <ul class="list2">
+              <li><a href="http://srobbin.com/jquery-plugins/backstretch/" target="_blank">jquery.backstretch</a></li>
+              <li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">jquery.mb.ytplayer</a></li>
+              <li><a href="http://keith-wood.name/countdown.html" target="_blank">Countdown.js</a></li>
+              <li><a href="http://www.owlgraphic.com/owlcarousel/" target="_blank">owl-carousel.js</a></li>
+            </ul>          
+            <br /><br />
+              # Fonts :
+              <br />
+              <ul class="list2">
+                <li>Open Sans</li>
+              </ul>
+
+              <pre class="brush: css">
+                <!-- google-font links -->
+                <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+              </pre>
+              <br /><br />
+              # Icons :
+              <br />
+              <ul class="list2">
+                <li><a href="http://fontawesome.io" target="_blank">Font Awesome 4.1.0</a> </li>
+              </ul>
+              <br /><br />
+              <hr />
+              <br /><br />
+              Once again, thank you so much for purchasing this Theme. !!
+            </div><!-- End data -->          
+        </div><!-- End section scripts -->     
+      </div>
+    </div><!-- End content -->
+
+    <div class="clearfix"></div>
+    
+    <!-- start footer -->
+    <footer>    
+      <div class="three columns padding"> </div>      
+      <div class="thirteen columns">
+        <div class="copyright">
+         <strong>Booster</strong> - Copyright © 2014 Mordorthemes
+        </div>
+      </div>  
+    </footer>
+    <!-- End footer -->
+  
+  </div><!-- End container -->
+  
+  <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+  <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+  <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+  <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+  <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+  <script type="text/javascript">
+   SyntaxHighlighter.all()
+  </script>
+    
+</body>
+</html>

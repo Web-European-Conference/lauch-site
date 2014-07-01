@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booster: Responsive Cooming Soon Template</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+
+
+    <!-- Preloader -->
+    <div class="mask">
+      <div id="loader" class="rotating"></div>
+    </div>
+    <!--/Preloader -->
+    
+  <!--start wrapper --> 
+  <div class="wrapper">  
+
+    <!-- start overlay on video -->
+    <div class="bg-overlay"></div>
+    <!-- end overlay on video -->
+
+    <!-- start section -->
+    <section>
+      <header>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="large-8 medium-12 small-12 large-text-left small-text-center medium-text-center columns">
+              
+              <!-- start logo -->
+              <img src="img/logo.png" alt="your logo goes here" />
+              <!-- end logo -->
+              
+            </div>
+            <div class="large-4 columns text-right">
+
+              <!-- start sync2 -->
+              <div id="sync2" class="owl-carousel">
+                <div class="item"><h3>subscribe</h3></div>
+                <div class="item"><h3>Email</h3></div>
+                <div class="item"><h3>About Us</h3></div>          
+              </div>
+              <!--end sync2 -->
+
+            </div>
+          </div>
+        </div>
+      </header>
+      
+
+  <!-- video from youtube, change here your url -->  
+  <div id="bgndVideo" class="player" data-poster="img/img1.jpg" data-property="{videoURL:'http://youtu.be/mcixldqDIEQ',containment:'body', autoPlay:true, showControls:false, mute:true, startAt:12, opacity:1}"></div>
+   <div id="bg-video-controls">
+      <a id="bg-video-volume" class="fa fa-volume-off" href="#" title="Unmute">&nbsp;</a>
+      <a id="bg-video-play" class="fa fa-pause" href="#" title="Pause">&nbsp;</a>
+    </div>
+  <!-- end video from youtube --> 
+
+      <div class="row">
+        <div class="large-12 large-centered columns">
+
+          <!-- Rotator Title --> 
+            <div id="rotate">
+               <h1 class="rotate">We are a <span>Big Digital Agency</span></h1>
+               <h1 class="rotate">Our website is <span>under construction</span></h1>
+            </div>
+            <!-- End Rotator Title -->
+
+        </div>
+      </div>
+
+    </section>  
+    <!-- end section -->
+
+    <!-- start contacts section -->
+    <section id="contacts">
+      <div class="row">
+        <div class="small-12 large-12  columns">
+
+          <!-- start sync1 -->
+          <div id="sync1" class="owl-carousel ">
+
+          <!-- start item -->
+          <div class="item">
+
+      <div class="row">
+        <div class="large-12 columns text-center">
+          <div class="text-center">
+          <h2 class="heading">Time left <span>until launching</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius.</p><br /><br />
+        </div>
+
+        <div class="small-10 columns small-centered">
+         
+          <!-- start timer, reference to js/countdown.js -->
+          <div id="timer"></div>
+          <!-- end timer -->
+
+        </div>
+
+        </div>
+      </div>
+
+          <div class="large-7 large-centered columns">
+
+            <!-- start newsletter signup form -->
+
+            <!-- start message validator -->
+            <div id="message-subscribe"></div>
+            <!-- end message validator -->
+
+            <form id="subscribe" method="post" action="php/subscribe.php" name="subscribe">
+              <div class="large-8 columns">
+                <input type="text" id="semail" name="YourEmail" placeholder="Enter your email" />
+              </div> 
+              <div class="large-4 medium-text-center columns">            
+                <button type="submit" id="ssubmit" name="subscribe" /><i class="fa fa-envelope-o"></i>Get Notified</button>
+              </div>
+            </form>
+            <!-- end newsletter signup form -->
+
+          </div>
+        </div>
+        <!-- end item -->
+
+        <!-- start item -->
+        <div class="item small-12 large-10 medium-10 medium-centered large-centered columns animated" data-animate-delay="400" data-animate="fadeInUp">    
+         <div class="text-center">
+          <h2 class="heading">Do you have a <span>question?</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius.</p><br /><br />
+        </div>
+
+          <!-- start contact form -->
+          <div id="message"></div>
+            <form method="post" action="php/contact.php" name="contactform" id="contactform">
+              <div class="large-6 columns">
+                <input type="text" name="name" placeholder="Name" id="name" />
+              </div>
+              <div class="large-6 columns">
+                <input type="text" name="email" placeholder="Email" id="email" />
+              </div>
+              <div class="large-12 columns">
+                <textarea placeholder="Message" name="comments" id="comments"></textarea>
+              </div>
+              <div class="large-12 text-center columns">             
+                <button type="submit" id="submit" name="submit" ><i class="fa fa-envelope-o"></i>Send</button>
+              </div> 
+            </form>
+          <!-- end contact form -->
+
+        </div>
+        <!-- end item -->
+
+        <!-- start item -->
+        <div class="item small-12 large-12 medium-12 medium-centered large-centered columns">
+        <div class="text-center">  
+          <h2 class="heading">Our <span>Best Services</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br /><br />
+        </div>
+
+          <div class="large-6 medium-6 columns info-box">
+            <i class=" info-box fa fa-cubes"></i>    
+            <h3 class="info-box">Typography</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div> 
+
+          <div class="large-6 medium-6 columns info-box">
+            <i class=" info-box fa fa-code"></i>    
+            <h3 class="info-box">Well Coded</h3>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <div class="large-6 medium-6 columns info-box">
+            <i class=" info-box fa fa-life-saver"></i>    
+            <h3 class="info-box">Great Support</h3>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <div class="large-6 medium-6 columns info-box">
+            <i class=" info-box fa fa-desktop"></i>    
+            <h3 class="info-box">Responsive</h3>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>  
+
+        </div>
+        <!-- end item -->
+
+      </div>
+      <!-- end sync1 --> 
+
+      </div>
+    </div>
+
+  </section>
+  <!-- end contacts section -->
+
+  <div class="push"></div>
+
+</div>
+<!--end wrapper -->
+
+<!-- start footer -->
+<footer class="footer">
+    <div class="row">
+      <div class="large-12 columns text-center">
+
+        <!-- start social links -->        
+        <ul class="social">
+          <li><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a title="Dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a title="Flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+          <li><a title="Github" href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <!-- end social links -->
+
+        <p>Booster - 2014 © mordorthemes. All rights reserved.</p>
+      </div>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/jquery.backstretch.js"></script>
+    <script type="text/javascript" src="js/jquery.mb.ytplayer.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>

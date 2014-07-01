@@ -1,0 +1,22 @@
+<!-- start footer -->
+<footer class="footer">
+    <div class="row">
+      <div class="large-12 columns text-center">
+
+        <!-- start social links -->        
+        <ul class="social">
+          <li><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a title="Dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a title="Flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+          <li><a title="Github" href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <!-- end social links -->
+
+        <p>Booster - 2014 © mordorthemes. All rights reserved.</p>
+      </div>
+    </div>
+</footer>
+<!-- end footer -->

@@ -1,0 +1,32 @@
+/*
+* Theme Name: Booster
+* File name: style.css
+* Theme URL: booster.mordorthemes.com
+* Description: Booster - Coming Soon Template
+* Author: Mordorthemes
+* Author URL: http://www.mordorthemes.com
+* Support: support@mordorthemes.com
+* Version: 1.0
+*/
+
+/*------------------------------------------------------
+
+	CSS Table Of Contents: 
+
+	1. NORMALIZE.CSS FOR RESETS
+	2. FOUNDATION.CSS FOR RESPONSIVE FRAMEWORK
+	3. FONT-AWESOME CSS FOR ICONS
+	4. ANIMATE.MIN.CSS FOR ANIMATIONS
+	5. OWL.TRANSITIONS.CSS FOR TRANSITIONS ON OWL CAROUSEL
+	6. YTPLAYER.CSS FOR VIDEO PLAYER
+	6. LAYOUT.CSS YOU CAN CUSTOMIZE
+		
+---------------------------------------------------------*/
+
+@import url("normalize.css"); /* NORMALIZE FOR RESET CSS */
+@import url("foundation.css");  /* FOUNDATION FRAMEWORK CSS */
+@import url("font-awesome.css"); /* ICONS CSS */
+@import url("animate.min.css"); /* ANIMATIONS FRAMEWORK CSS */
+@import url("owl.transitions.css"); /* TRANSITIONS CSS FOR OWL CAROUSEL */
+@import url("YTPlayer.css.css"); /* CSS FOR VIDEO PLAYER */
+@import url("layout.css"); /* CUSTOM CSS YOU CAN MODIFY */
