@@ -1,5 +1,5 @@
 var cluster = require('cluster');
-var logger = require("./utils/logger");
+var logger;
 var _ = require('underscore');
 
 var env = _.find(process.argv.slice(2), function(arg) {
@@ -11,6 +11,7 @@ var env = _.find(process.argv.slice(2), function(arg) {
 GLOBAL.env = (env !== undefined) ? env.substr(4, 3) : 'prod';
 
 if (GLOBAL.env == 'dev') {
+    logger = require("./utils/logger");
     logger.debug("Initializing development configuration.");
 
     var express = require("express");
@@ -29,6 +30,7 @@ if (GLOBAL.env == 'dev') {
     });
 
 } else {
+    logger = require("./utils/logger");
     logger.debug("Initializing production configuration.");
     if (cluster.isMaster) {
         var numCPUs = require('os').cpus().length;

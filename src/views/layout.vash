@@ -35,7 +35,7 @@
         
         'use strict';
 
-      $.backstretch("img/img1.jpg");
+      $.backstretch("img/img2.jpg");
 
       });
     </script>

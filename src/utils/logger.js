@@ -1,10 +1,11 @@
 var winston = require("winston");
+var logger;
 
 winston.emitErrs = true;
 
 if(GLOBAL.env != 'dev')
 {
-  var logger = new winston.Logger({
+  logger = new winston.Logger({
       transports: [
           new winston.transports.File({
               level: 'info',
@@ -19,10 +20,10 @@ if(GLOBAL.env != 'dev')
       exitOnError: false
   });
 } else{
-  var logger = new winston.Logger({
+  logger = new winston.Logger({
       transports: [
           new winston.transports.Console({
-              level: 'error',
+              level: 'debug',
               handleExceptions: false,
               json: false,
               colorize: true
