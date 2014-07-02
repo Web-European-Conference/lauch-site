@@ -8,6 +8,12 @@ First think to do is install the right packages:
 # Install grunt and bower
 $ npm install -g grunt-cli
 
+$ cd src
+$ npm install
+
+$ cd ..
+$ cd grunt
+
 # Install packages
 $ npm install
 ```
