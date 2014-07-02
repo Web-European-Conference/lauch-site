@@ -16,6 +16,7 @@ module.exports = function(grunt) {
             dev: {
                 script: '../src/app.js',
                 options: {
+                    args: ['env:dev'],
                     nodeArgs: ['--debug'],
                     env: {
                         PORT: port
