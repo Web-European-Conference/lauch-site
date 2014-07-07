@@ -18,6 +18,12 @@ $ cd grunt
 $ npm install
 ```
 
+# Credentials #
+
+This website uses Mailchimp for the newsletter and also send emails using node and gmail (in my case, but is configurable).
+
+To get it work is important to rename the file ```_credentials.js``` to ```credentials.js``` in src/config, change the value with your credentials and you done.
+
 ## Watch & serve ##
 
 ```
@@ -25,3 +31,4 @@ cd grunt
 $ grunt
 ```
 is not necessary Start and Stop the web server, Nodemon will monitoring all src folder (*.js)
+
