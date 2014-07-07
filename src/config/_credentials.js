@@ -8,6 +8,6 @@ module.exports.credentials = {
     },
     mailchimp: {
         key: 'put here your mailchimp api',
-        listID: 'aaaaaaaaa'
+        listId: 'aaaaaaaaa'
     }
 };

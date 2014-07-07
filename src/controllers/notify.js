@@ -21,15 +21,22 @@
                 EMAIL: req.email
             };
 
-            try { 
-                var mailChimpAPI = new MailChimpAPI(apiKey, { version : '2.0' });
+            var credentials = require("../config/credentials.js").credentials;
 
-                mailChimpAPI.listSubscribe({id: listID, email_address:req.body.email, double_optin: false}, function (error, data) {
-                    if (error){
+            try {
+                var mailChimpAPI = new MailChimpAPI(credentials.mailchimp.key, {
+                    version: '2.0'
+                });
+
+                mailChimpAPI.lists_subscribe({
+                    id: credentials.mailchimp.listId,
+                    email_address: req.body.email,
+                    double_optin: false
+                }, function(error, data) {
+                    if (error) {
                         logger.error(error);
                         res.send("<p class='error'>Something went wrong. Please try again.</p>");
-                    }
-                    else {
+                    } else {
                         logger.debug(data);
                         res.send("<p class='success'>Thanks for signing up!</p>");
                     }
