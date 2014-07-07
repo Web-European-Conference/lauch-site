@@ -83,7 +83,7 @@
                 <div id="message-subscribe"></div>
                 <!-- end message validator -->
 
-                <form id="subscribe" method="post" action="php/subscribe.php" name="subscribe">
+                <form id="subscribe" method="post" action="/api/notify/join" name="subscribe">
                   <div class="large-8 columns">
                     <input type="text" id="semail" name="YourEmail" placeholder="Enter your email" />
                   </div> 
