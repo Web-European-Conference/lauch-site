@@ -34,8 +34,8 @@
                     double_optin: false
                 }, function(error, data) {
                     if (error) {
-                        logger.error(error);
-                        res.send("<p class='error'>Something went wrong. Please try again.</p>");
+                        logger.error("There is an error calling MailChimp: " + error);
+                        res.status(500).send("<p class='error'>Something went wrong. Please try again.</p>");
                     } else {
                         logger.debug(data);
                         res.send("<p class='success'>Thanks for signing up!</p>");
