@@ -15,6 +15,30 @@
                 res.json(400, errors);
             }
 
+            var MailChimpAPI = require('mailchimp').MailChimpAPI;
+
+            var merge_vars = {
+                EMAIL: req.email
+            };
+
+            try { 
+                var mailChimpAPI = new MailChimpAPI(apiKey, { version : '2.0' });
+
+                mailChimpAPI.listSubscribe({id: listID, email_address:req.body.email, double_optin: false}, function (error, data) {
+                    if (error){
+                        logger.error(error);
+                        res.send("<p class='error'>Something went wrong. Please try again.</p>");
+                    }
+                    else {
+                        logger.debug(data);
+                        res.send("<p class='success'>Thanks for signing up!</p>");
+                    }
+                });
+
+            } catch (error) {
+                logger.error(error.message);
+            }
+
             //here need to implement mail-chimp integration
         });
 

@@ -8,6 +8,8 @@
 
     expressConfig.init = function(app, express) {
 
+        app.use(express.favicon());
+
         //setup view engine
         logger.debug("Setting 'Vash' as view engine");
         app.set("view engine", "vash");

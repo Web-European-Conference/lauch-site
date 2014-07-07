@@ -106,7 +106,7 @@
 
               <!-- start contact form -->
               <div id="message"></div>
-                <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                <form method="post" action="/api/contact/" name="contactform" id="contactform">
                   <div class="large-6 columns">
                     <input type="text" name="name" placeholder="Name" id="name" />
                   </div>
