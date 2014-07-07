@@ -23,6 +23,8 @@ GLOBAL.env = (env !== undefined) ? env.substr(4, 3) : 'prod';
     expressConfig.init(app, express);
     logger.info("Express configured");
 
+    logger.info("Environment Port: " + process.env.port);
+
     var port = Number(process.env.port || 5000);
 
     app.listen(port, function() {
