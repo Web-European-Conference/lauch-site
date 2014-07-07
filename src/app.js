@@ -30,7 +30,7 @@ if (GLOBAL.env == 'dev') {
     });
 
 } else {
-    logger = require("./utils/logger");
+    logger = require("./utils/logger.js");
     logger.debug("Initializing production configuration.");
     if (cluster.isMaster) {
         var numCPUs = require('os').cpus().length;
