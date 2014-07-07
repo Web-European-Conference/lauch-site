@@ -4,6 +4,8 @@
     notifyController.init = function(app) {
         app.post('/api/notify/join', function(req, res) {
 
+            logger.debug('email value: ' + req.body.email);
+
             req.assert('email', 'Field required').notEmpty();
             req.assert('email', 'Invalid email format').isEmail();
 
@@ -17,10 +19,6 @@
 
             var MailChimpAPI = require('mailchimp').MailChimpAPI;
 
-            var merge_vars = {
-                EMAIL: req.email
-            };
-
             var credentials = require("../config/credentials.js").credentials;
 
             try {
@@ -30,8 +28,9 @@
 
                 mailChimpAPI.lists_subscribe({
                     id: credentials.mailchimp.listId,
-                    email_address: req.body.email,
-                    double_optin: false
+                    email: {
+                        email:req.body.email
+                    }
                 }, function(error, data) {
                     if (error) {
                         logger.error("There is an error calling MailChimp: " + error);
@@ -66,7 +65,7 @@
             }
 
             app.mailer.send('email/contact', { //Template (it uses the same engine of express)
-                to: 'example@example.com', // REQUIRED. This can be a comma delimited string just like a normal email to field. 
+                to: 'example@example.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.
                 subject: 'Test Email', // REQUIRED.
                 otherProperty: 'Other Property' // All additional properties are also passed to the template as local variables.
             }, function(err) {
