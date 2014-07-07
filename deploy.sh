@@ -44,7 +44,7 @@ if [[ ! -n "$NEXT_MANIFEST_PATH" ]]; then
 fi
 
 if [[ ! -n "$DEPLOYMENT_TARGET" ]]; then
-  DEPLOYMENT_TARGET=$ARTIFACTS/wwwroot
+  DEPLOYMENT_TARGET=$ARTIFACTS/wwwroot/src
 else
   KUDU_SERVICE=true
 fi
