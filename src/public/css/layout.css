@@ -403,6 +403,11 @@ section#contacts{
 #contactform, #subscribe{
 	padding-bottom:30px;
 }
+
+#contactform button {
+	padding-bottom:16px;
+}
+
 .comment-form{
 	margin-bottom:20px; 
 	padding-bottom:50px; 
