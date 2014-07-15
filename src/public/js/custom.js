@@ -170,7 +170,18 @@ $('#contactform').submit(function(){
                 if(data.match('success') != null) $('#contactform').slideUp('slow');
 
             }
-        );
+        ).fail(function(data) {
+            switch(data.status) {
+                case 400: document.getElementById('message').innerHTML = "Wrong fields! Check them out.";
+                    break;
+                default: document.getElementById('message').innerHTML = "An error occurred! Please try again later.";
+                    break;
+            }
+            
+            $('#message').slideDown(300);
+            $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+            $('#submit').removeAttr('disabled');
+        });
 
         });
 
@@ -234,7 +245,18 @@ jQuery(document).ready(function(){
                 if(data.match('success') != null) $('#subscribe').slideUp('slow');
 
             }
-        );
+        ).fail(function(data) {
+            switch(data.status) {
+                case 400: document.getElementById('message-subscribe').innerHTML = "Wrong email format";
+                    break;
+                default: document.getElementById('message-subscribe').innerHTML = "An error occurred! Please try again later.";
+                    break;
+            }
+            
+            $('#message-subscribe').slideDown(300);
+            $('#subscribe img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
+            $('#ssubmit').removeAttr('disabled');
+        });
 
         });
 
