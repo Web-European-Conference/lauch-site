@@ -61,7 +61,7 @@
             <div class="large-12 columns text-center">
               <div class="text-center">
               <h2 class="heading">Get ready! <span>Spring 2015</span></h2>
-              <p>This is the first European Conference dedicated only to the future of web development. Everything about the coolest framework aspnet vnext, nodejs, ruby, angularjs and so on</p><br /><br />
+              <p>Coming soon: the first European Conference dedicated to the future of web development on all technlogies.<br />Everything about the newest and coolest framework for building modern web applications and websites:<br />ASP.NET vNext, node.js, ruby, angular.js and much more.</p>
             </div>
 
             <div class="small-10 columns small-centered">
@@ -82,7 +82,7 @@
                 <!-- start message validator -->
                 <div id="message-subscribe"></div>
                 <!-- end message validator -->
-
+                
                 <form id="subscribe" method="post" action="/api/notify/join" name="subscribe">
                   <div class="large-8 columns">
                     <input type="text" id="semail" name="YourEmail" placeholder="Enter your email" />
@@ -101,7 +101,7 @@
             <div class="item small-12 large-10 medium-10 medium-centered large-centered columns animated" data-animate-delay="400" data-animate="fadeInUp">    
              <div class="text-center">
               <h2 class="heading">Do you have a <span>question?</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius.</p><br /><br />
+              <p>Want to know more? Do you want to sponsor our conference? Do you want to help with the organization?<br />Please send us a message using the following form.</p><br /><br />
             </div>
 
               <!-- start contact form -->
