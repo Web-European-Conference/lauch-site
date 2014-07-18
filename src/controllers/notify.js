@@ -66,7 +66,7 @@
 
             app.mailer.send('email/contact', { //Template (it uses the same engine of express)
                 to: req.body.email, // REQUIRED. This can be a comma delimited string just like a normal email to field.
-                subject: 'Thank you contacting Web European Conference', // REQUIRED.
+                subject: 'Thank you for contacting the Web European Conference', // REQUIRED.
                 otherProperty: 'Other Property' // All additional properties are also passed to the template as local variables.
             }, function(err) {
                 if (err) {

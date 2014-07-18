@@ -5,7 +5,7 @@
 
         <!-- start social links -->        
         <ul class="social">
-          <li><a title="Twitter" href="http://WebNextConf" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a title="Twitter" href="http://twitter.com/WebNextConf" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a title="Facebook" href="https://www.facebook.com/WebnextConf" target="_blank"><i class="fa fa-facebook"></i></a></li>
           <li><a title="Github" href="https://github.com/Web-European-Conference" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>

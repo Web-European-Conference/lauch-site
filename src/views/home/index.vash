@@ -20,8 +20,8 @@
                   <!-- start sync2 -->
                   <div id="sync2" class="owl-carousel">
                     <div class="item"><h3>subscribe</h3></div>
-                    <div class="item"><h3>Email</h3></div>
-                    <div class="item"><h3>About Us</h3></div>          
+                    <div class="item"><h3>Contact</h3></div>
+                    <div class="item"><h3>About</h3></div>          
                   </div>
                   <!--end sync2 -->
 
@@ -61,7 +61,7 @@
             <div class="large-12 columns text-center">
               <div class="text-center">
               <h2 class="heading">Get ready! <span>Spring 2015</span></h2>
-              <p>Coming soon: the first European Conference dedicated to the future of web development on all technlogies.<br />Everything about the newest and coolest framework for building modern web applications and websites:<br />ASP.NET vNext, node.js, ruby, angular.js and much more.</p>
+              <p>Coming soon: the first European Conference dedicated to the future of Development on all technlogies.<br />Everything about the newest and coolest framework for building modern web applications and websites:<br />ASP.NET vNext, node.js, ruby, angular.js and much more.</p>
             </div>
 
             <div class="small-10 columns small-centered">
@@ -128,33 +128,46 @@
             <!-- start item -->
             <div class="item small-12 large-12 medium-12 medium-centered large-centered columns">
             <div class="text-center">  
-              <h2 class="heading">Our <span>Best Services</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br /><br />
+              <h2 class="heading">Our <span>Philosophy</span></h2>
+              <p>Modern web development is moving away from all the enterprisey features that used to rule the world of development in the past years, and will go to a more light-weight and simple approach. This is exactly what our conference will be about.</p>
             </div>
 
               <div class="large-6 medium-6 columns info-box">
-                <i class=" info-box fa fa-cubes"></i>    
-                <h3 class="info-box">Typography</h3> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <i class=" info-box fa fa-code"></i>    
+                <h3 class="info-box">Code Craftsmenship</h3> 
+                <p>Developers are taking back the control, of the code they write, on how they write and on which tools make them productive.</p>
               </div> 
 
               <div class="large-6 medium-6 columns info-box">
-                <i class=" info-box fa fa-code"></i>    
-                <h3 class="info-box">Well Coded</h3>      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <i class=" info-box fa fa-cubes"></i>    
+                <h3 class="info-box">Tiny assemblable frameworks</h3>      
+                <p>Gone are the huge monolithic frameworks from one vendor: Modern Web Apps are a mix and match of different frameworks, technlogies and languages.</p>
               </div>
 
               <div class="large-6 medium-6 columns info-box">
-                <i class=" info-box fa fa-life-saver"></i>    
-                <h3 class="info-box">Great Support</h3>      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <i class=" info-box fa fa-wrench"></i>    
+                <h3 class="info-box">BYOT</h3>      
+                <p>Bring Your Own Tool: Modern Web Development is about productivity the way you want it, not the way the vendor wants it to be.</p>
               </div>
 
               <div class="large-6 medium-6 columns info-box">
                 <i class=" info-box fa fa-desktop"></i>    
-                <h3 class="info-box">Responsive</h3>      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>  
+                <h3 class="info-box">Mobile First</h3>      
+                <p>Web sites are now mostly viewed on mobile devices: web sites and apps must be built with that in mind.</p>
+              </div>
+
+               <div class="large-12 medium-12 columns info-box">
+                <i class=" info-box fa fa-github"></i>    
+                <h3 class="info-box">Submit your proposal</h3> 
+                <p>Do you think you have something you want to share and show at the conferece? The site is not ready yet, but you can start submitting your proposal by forking our proposals' repository and adding yours: <a href="https://github.com/Web-European-Conference/c4p">github.com/Web-European-Conference/c4p</a>.</p>
+              </div>
+
+
+               <div class="large-12 medium-12 columns info-box">
+                <i class=" info-box fa fa-life-ring"></i>    
+                <h3 class="info-box">Sponsors</h3> 
+                <p>Are you representing a company that follows our philosophy? Do you want to be part of this conference? We'll love to have you on board.Please contact us via the contact form.</p>
+              </div> 
 
             </div>
             <!-- end item -->
