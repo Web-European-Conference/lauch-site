@@ -1,4 +1,4 @@
-# Setup #
+## Setup ##
 
 The site is built on top of [NodeJs](http://nodejs.org/) and the application requires some packages from the [NPM](https://www.npmjs.org/).
 
@@ -18,7 +18,7 @@ $ cd grunt
 $ npm install
 ```
 
-# Credentials #
+## Credentials ##
 
 This website uses Mailchimp for the newsletter and also send emails using node and gmail (in my case, but is configurable).
 
