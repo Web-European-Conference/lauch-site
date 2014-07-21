@@ -33,11 +33,20 @@
                     }
                 }, function(error, data) {
                     if (error) {
-                        logger.error("There is an error calling MailChimp: " + error);
-                        res.status(500).send("<p class='error'>Something went wrong. Please try again.</p>");
+
+                        if(error.code == 214)
+                        {   
+                            logger.debug("User already subscribed");
+                            res.status(304).send("User already subscribed");    
+                        }
+                        else
+                        {
+                            logger.error("There is an error calling MailChimp: " + error);
+                            res.status(500).send("Something went wrong. Please try again.");
+                        }
                     } else {
                         logger.debug(data);
-                        res.send("<p class='success'>Thanks for signing up!</p>");
+                        res.send("Thanks for signing up!");
                     }
                 });
 

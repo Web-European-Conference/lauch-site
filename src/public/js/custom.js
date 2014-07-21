@@ -238,15 +238,17 @@ jQuery(document).ready(function(){
             email: $('#semail').val()
         },
             function(data){
-                document.getElementById('message-subscribe').innerHTML = data;
+                document.getElementById('message-subscribe').innerHTML = "User subscribed!";
                 $('#message-subscribe').slideDown(300);
                 $('#subscribe img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
                 $('#ssubmit').removeAttr('disabled');
-                if(data.match('success') != null) $('#subscribe').slideUp('slow');
+                $('#subscribe').slideUp('slow');
 
             }
         ).fail(function(data) {
             switch(data.status) {
+                case 304: document.getElementById('message-subscribe').innerHTML = "User already subscribed.";
+                    break;
                 case 400: document.getElementById('message-subscribe').innerHTML = "Wrong email format";
                     break;
                 default: document.getElementById('message-subscribe').innerHTML = "An error occurred! Please try again later.";
