@@ -60,6 +60,13 @@
 
         require("../controllers/").init(app);
 
+        logger.info("Configuring 404 page");
+        app.use(function(req, res, next) {
+            res.statusCode = 404;
+            res.description = "Not found";
+            res.render("404");
+        });
+
 
     };
 
