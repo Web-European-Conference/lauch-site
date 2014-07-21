@@ -82,11 +82,11 @@ $(document).ready( function(){
     });
      
     sync2.owlCarousel({
-    items : 3,
-    itemsDesktop : [1199,3],
-    itemsDesktopSmall : [979,3],
-    itemsTablet : [768,3],
-    itemsMobile : [479,3],
+    items : 5,
+    itemsDesktop : [1199,5],
+    itemsDesktopSmall : [979,5],
+    itemsTablet : [768,5],
+    itemsMobile : [479,5],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
