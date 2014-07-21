@@ -67,6 +67,13 @@
             res.render("404");
         });
 
+        logger.info("Configuring 500 page");
+        app.use(function(err, req, res, next) {
+            logger.error(err.stack);
+            res.statusCode = 500;
+            res.description = "Internal server error";
+            res.render("500");
+        });
 
     };
 

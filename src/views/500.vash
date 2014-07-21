@@ -24,9 +24,9 @@
 
               	<!-- Rotator Title --> 
 	            <div id="rotate">
-	             <h1 class="rotate"><span>404 - Page not found</span></h1>
-	             <h1 class="rotate">Our website is <span>under construction</span></h1>
-	             Home page  <a href="/">here</a> 
+	             <h1 class="rotate"><span>500 - Internal server error</span></h1>
+	             <h1 class="rotate">Sorry about that, we are trying to fix it.</span></h1>
+	             Home page <a href="/">here</a> 
 	            </div>
 	            <!-- End Rotator Title -->
 
