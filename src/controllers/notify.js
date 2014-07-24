@@ -81,11 +81,11 @@
                     message: req.body.comments
                 };
 
-            app.mailer.send('email/contact', { //Template (it uses the same engine of express)
-                to: 'info@webnetconf.eu', // REQUIRED. This can be a comma delimited string just like a normal email to field.
+            app.mailer.send('email/contact', {
                 from: req.body.email, 
+                to: 'info@webnetconf.eu', 
                 subject: 'New contact from website.', // REQUIRED.
-                otherProperty: model // All additional properties are also passed to the template as local variables.
+                otherProperty: model 
             }, function(err) {
                 if (err) {
                     // handle error
@@ -95,10 +95,25 @@
                     
                     return;
                 }
-
-                logger.log('info', 'Email Sent', model);
-                res.send(200,'Email Sent');
             });
+
+            app.mailer.send('email/responder', {
+                from: 'info@webnectconf.eu', 
+                to: req.body.email, 
+                subject: 'Web European Conference'
+            }, function(err) {
+                if (err) {
+                    // handle error
+                    logger.error(err);
+
+                    res.send(500,'There was an error sending the email');
+                    
+                    return;
+                }
+            });
+
+            logger.log('info', 'Email Sent', model);
+            res.send(200,'Email Sent!');
         });
     };
 

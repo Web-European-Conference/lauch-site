@@ -47,11 +47,10 @@
         var credentials = require("./credentials.js").credentials;
 
         mailer.extend(app, {
-            from: 'no-reply@example.com',
             host: credentials.mailer.host,
             secureConnection: credentials.mailer.secureConnection,
             port: credentials.mailer.port,
-            transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
+            transportMethod: 'SMTP',
             auth: {
                 user: credentials.mailer.username,
                 pass: credentials.mailer.password
