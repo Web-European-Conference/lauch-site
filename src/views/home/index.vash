@@ -11,7 +11,7 @@
                     <div class="large-5 medium-12 small-12 large-text-left small-text-center medium-text-center columns">
 
                         <!-- start logo -->
-                        <img src="img/logo.png" alt="your logo goes here" />
+                        <!--<img src="img/logo.png" alt="your logo goes here" />-->
                         <!-- end logo -->
 
                     </div>
