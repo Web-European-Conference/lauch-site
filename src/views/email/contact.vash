@@ -1,7 +1,7 @@
-Thank you for contacting us regarding the Web.Next European Conference.
+Hey you got a new contact from the website!<br/>
+<br/>
+<br/>
 
-This is an automated answer sent by a robot, but a human being will get back to you as soon as possible.
-
-Regards
-
-The Web.Next Conference Team
+Name: @model.otherProperty.name <br/>
+Email: @model.otherProperty.email <br/>
+Message: @model.otherProperty.message <br/>

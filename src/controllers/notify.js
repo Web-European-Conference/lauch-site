@@ -61,7 +61,7 @@
         app.post('/api/contact/', function(req, res) {
 
             req.assert('name', 'Field required').notEmpty();
-            req.assert('message', 'Field required').notEmpty();
+            req.assert('comments', 'Field required').notEmpty();
             req.assert('email', 'Field required').notEmpty();
             req.assert('email', 'Invalid email format').isEmail();
 
@@ -71,23 +71,34 @@
             if (errors) {
                 logger.warn("Wrong request: ", errors);
                 res.json(400, errors);
+
+                return;
             }
 
+            var model = {
+                    name: req.body.name,
+                    email: req.body.email,
+                    message: req.body.comments
+                };
+
             app.mailer.send('email/contact', { //Template (it uses the same engine of express)
-                to: req.body.email, // REQUIRED. This can be a comma delimited string just like a normal email to field.
-                subject: 'Thank you for contacting the Web European Conference', // REQUIRED.
-                otherProperty: 'Other Property' // All additional properties are also passed to the template as local variables.
+                to: 'info@webnetconf.eu', // REQUIRED. This can be a comma delimited string just like a normal email to field.
+                from: req.body.email, 
+                subject: 'New contact from website.', // REQUIRED.
+                otherProperty: model // All additional properties are also passed to the template as local variables.
             }, function(err) {
                 if (err) {
                     // handle error
-                    console.log(err);
-                    res.send('There was an error sending the email');
+                    logger.error(err);
+
+                    res.send(500,'There was an error sending the email');
+                    
                     return;
                 }
-                res.send('Email Sent');
-            });
 
-            //here the code to send the email, and response with the right status code and info
+                logger.log('info', 'Email Sent', model);
+                res.send(200,'Email Sent');
+            });
         });
     };
 
