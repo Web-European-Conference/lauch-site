@@ -5,6 +5,9 @@
     var path = require('path');
     var expressValidator = require('express-validator');
     var mailer = require('express-mailer');
+    var credentials = require("./credentials.js").credentials;
+    var cookieParser = require('cookie-parser');
+    var session = require('express-session');
 
     expressConfig.init = function(app, express) {
 
@@ -36,15 +39,27 @@
             extended: true
         }));
 
-        logger.debug("Enable validation....");
+        logger.debug("Enabling validation....");
         app.use(expressValidator());
+
+        logger.debug("Enabling session....");
+        app.use(session({
+            secret: credentials.session.secretPhrase,
+            saveUninitialized: true,
+            resave: true
+        }));
+
+        logger.debug("Enabling cookie parser....");
+        app.use(cookieParser());
+
+        logger.debug("Enabling csurf....");
+        var csrf    = require('csurf');
+        app.use(csrf());
 
         logger.debug("Overriding 'Express' logger");
         app.use(require('morgan')({
             "stream": logger.stream
         }));
-
-        var credentials = require("./credentials.js").credentials;
 
         mailer.extend(app, {
             host: credentials.mailer.host,

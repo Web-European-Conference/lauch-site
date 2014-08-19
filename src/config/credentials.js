@@ -9,5 +9,8 @@ module.exports.credentials = {
     mailchimp: {
         key: process.env.MAILCHIMP_KEY || 'put here your mailchimp api',
         listId: process.env.MAILCHIMP_LIST_ID || 'aaaaaaaaa'
+    },
+    session: {
+        secretPhrase : "my secret session phrase"
     }
 };
