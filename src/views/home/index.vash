@@ -105,6 +105,7 @@
 
                             <form id="subscribe" method="post" action="/api/notify/join" name="subscribe">
                                 <div class="large-8 columns">
+                                    <input type="hidden" id="csrfToken" name="csrfToken" value="@model.csrfToken">
                                     <input type="text" id="semail" name="YourEmail" placeholder="Enter your email" />
                                 </div>
                                 <div class="large-4 medium-text-center columns">

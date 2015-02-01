@@ -1,4 +1,5 @@
-(function(notifyController) {
+(function (notifyController) {
+    'use strict';
     var logger = require('../utils/logger');
 
     notifyController.init = function(app) {

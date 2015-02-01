@@ -255,7 +255,8 @@ jQuery(document).ready(function() {
                 .attr('disabled', 'disabled');
 
             $.post(action, {
-                    email: $('#semail').val()
+                    email: $('#semail').val(),
+                    _csrf: $('#csrfToken').val()
                 },
                 function(data) {
                     document.getElementById('message-subscribe').innerHTML = "User subscribed!";

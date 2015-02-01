@@ -54,7 +54,7 @@
 
         logger.debug("Enabling csurf....");
         var csrf    = require('csurf');
-        app.use(csrf());
+        app.use(csrf())
 
         logger.debug("Overriding 'Express' logger");
         app.use(require('morgan')({
@@ -73,6 +73,15 @@
         });
 
         require("../controllers/").init(app);
+        
+        // error handler
+        app.use(function (err, req, res, next) {
+          if (err.code !== 'EBADCSRFTOKEN') return next(err)
+
+          // handle CSRF token errors here
+          res.status(403)
+          res.send('session has expired or form tampered with')
+        })
 
         logger.info("Configuring 404 page");
         app.use(function(req, res, next) {
